@@ -1,8 +1,11 @@
 while True:
 	clear()
-	for row in range(3):
+
+	FARM_DIMENSIONS = (3, 3)
+
+	for row in range(FARM_DIMENSIONS[0]):
 		move(East)
-		for column in range(3):
+		for column in range(FARM_DIMENSIONS[1]):
 			move(North)
 			if can_harvest():
 				harvest()
