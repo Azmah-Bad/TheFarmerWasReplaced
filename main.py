@@ -1,5 +1,4 @@
 while True:
-	clear()
 
 	FARM_DIMENSIONS = (get_world_size(), get_world_size())
 
@@ -9,5 +8,5 @@ while True:
 			move(North)
 			if can_harvest():
 				harvest()
-				# till()
+				till()
 				plant(Entities.Bush)
