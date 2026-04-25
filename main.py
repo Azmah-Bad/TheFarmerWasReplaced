@@ -1,7 +1,7 @@
 while True:
 	clear()
 
-	FARM_DIMENSIONS = (3, 3)
+	FARM_DIMENSIONS = (get_world_size(), get_world_size())
 
 	for row in range(FARM_DIMENSIONS[0]):
 		move(East)
